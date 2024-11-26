@@ -92,6 +92,7 @@ main {
 .section h2 {
   width: 600px;
   font-size: 42px;
+  line-height: 56px;
   color: var(--secondary-100);
   letter-spacing: 1px;
 }
@@ -172,23 +173,21 @@ input::placeholder {
   transform: translate(-50%, -50%); */
   height: 70px;
   width: 70px;
-  background: url('./images/video-icon.png') no-repeat center/cover;
+  background: url('../images/video-icon.png') no-repeat center/cover;
+  cursor: pointer;
 }
 
 .img {
+  display: block;
   width: 100%;
-  object-fit: cover;
+  height: 100%;
+  /* object-fit: contain; */
 }
 
 .article p {
   margin-top: 32px;
   width: 350px;
   font-size: 18px;
-  color: var(--secondary-200);
-}
-.article p {
-  margin-top: 32px;
-  width: 350px;
-  font-size: 18px;
+  line-height: 28px;
   color: var(--secondary-200);
 }
