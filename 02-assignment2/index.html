@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Assignment 2</title>
+
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Heebo:wght@100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- css links -->
+    <link rel="stylesheet" href="./css/index.css" />
+  </head>
+  <body>
+    <!-- ***** -->
+    <!-- HEADER -->
+    <!-- ***** -->
+
+    <header class="header">
+      <nav class="nav">
+        <div class="logo">
+          <a href="#"><span>J</span>ohn <span>D</span>oe</a>
+        </div>
+
+        <button id="toggleBtn" class="toggleBtn">
+          <img src="./images/menu.png" alt="menu img" class="toggleImg" />
+        </button>
+
+        <ul class="navLinks">
+          <li><a href="#works">Works</a></li>
+          <li><a href="#blogs">Blogs</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <aside id="sidebar" class="sidebar">
+      <button id="close-btn" class="close-btn">X</button>
+      <div class="logo">
+        <a href="#"><span>J</span>ohn <span>D</span>oe</a>
+      </div>
+      <ul class="">
+        <li><a href="#works">Works</a></li>
+        <li><a href="#blogs">Blogs</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </aside>
+
+    <!-- ***** -->
+    <!-- HERO SECTION-->
+    <!-- ***** -->
+    <section class="sectionCenter hero">
+      <div class="portfolioContainer">
+        <img
+          src="./images/boy.jpg"
+          alt="portfolio image"
+          class="portfolioImage"
+        />
+      </div>
+
+      <div class="mainContent">
+        <h1>
+          Hi, I am John, <br />
+          Creative Technologist
+        </h1>
+        <p>
+          Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
+          sint. Velit officia consequat duis enim velit mollit. Exercitation
+          veniam consequat sunt nostrud amet.
+        </p>
+        <button>Download Resume</button>
+      </div>
+    </section>
+
+    <!-- ***** -->
+    <!-- POST SECTION-->
+    <!-- ***** -->
+    <section id="blogs" class="posts">
+      <div class="sectionCenter postsSection">
+        <div class="postsHeader">
+          <p>Recent Posts</p>
+          <a href="#" class="viewAll">View All</a>
+        </div>
+
+        <!-- posts -->
+        <div class="postsContainer">
+          <!-- first posts -->
+          <div class="singlePost">
+            <h3>Making a design system from scratch</h3>
+            <div class="timeAndPosition">
+              <p class="time">12 Feb 2020</p>
+              <div class="line"></div>
+              <p class="designation">Design, Pattern</p>
+            </div>
+            <p>
+              Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+              amet sint. Velit officia consequat duis enim velit mollit.
+              Exercitation veniam consequat sunt nostrud amet.
+            </p>
+          </div>
+
+          <!-- second posts -->
+          <div class="singlePost">
+            <h3>Creating pixel perfect icons in Figma</h3>
+            <div class="timeAndPosition">
+              <p class="time">12 Feb 2020</p>
+              <div class="line"></div>
+              <p class="designation">Design, Pattern</p>
+            </div>
+            <p class="content">
+              Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+              amet sint. Velit officia consequat duis enim velit mollit.
+              Exercitation veniam consequat sunt nostrud amet.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ******** -->
+    <!-- FEATURED WORKS -->
+    <!-- ******** -->
+    <section id="works" class="sectionCenter featuredSection">
+      <p class="sectionTitle">Featured Works</p>
+      <div class="workContainer">
+        <!-- first work -->
+        <div class="singleWork">
+          <div class="workImageContainer">
+            <img src="./images/img1.jpg" alt="image 1" class="workImage" />
+          </div>
+          <div class="workContent">
+            <h2>Designing Dashboards</h2>
+            <div class="yearAndWork">
+              <p class="year">2020</p>
+              <p class="work">Dashboard</p>
+            </div>
+            <p>
+              Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+              amet sint. Velit officia consequat duis enim velit mollit.
+              Exercitation veniam consequat sunt nostrud amet.
+            </p>
+          </div>
+        </div>
+        <!-- end of first work -->
+        <!-- second work -->
+        <div class="singleWork">
+          <div class="workImageContainer">
+            <img src="./images/img2.jpg" alt="image 1" class="workImage" />
+          </div>
+          <div class="workContent">
+            <h2>Vibrant Portraits of 2020</h2>
+            <div class="yearAndWork">
+              <p class="year">2020</p>
+              <p class="work">Illustration</p>
+            </div>
+            <p>
+              Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+              amet sint. Velit officia consequat duis enim velit mollit.
+              Exercitation veniam consequat sunt nostrud amet.
+            </p>
+          </div>
+        </div>
+        <!-- end of second work -->
+
+        <!-- third work -->
+        <div class="singleWork">
+          <div class="workImageContainer">
+            <img src="./images/img3.jpg" alt="image 1" class="workImage" />
+          </div>
+          <div class="workContent">
+            <h2>36 Days of Malayalam type</h2>
+            <div class="yearAndWork">
+              <p class="year">2024</p>
+              <p class="work">Typography</p>
+            </div>
+            <p>
+              Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+              amet sint. Velit officia consequat duis enim velit mollit.
+              Exercitation veniam consequat sunt nostrud amet.
+            </p>
+          </div>
+        </div>
+        <!-- end of third work -->
+      </div>
+    </section>
+
+    <!-- ******** -->
+    <!-- FOOTER -->
+    <!-- ******** -->
+    <footer id="contact" class="footer">
+      <div class="sectionCenter footerSection">
+        <!-- footer links -->
+        <ul>
+          <li>
+            <img src="./images/fb.png" alt="facebook" />
+          </li>
+          <li>
+            <img src="./images/insta.png" alt="instagram" />
+          </li>
+          <li>
+            <img src="./images/twitter.png" alt="twitter" />
+          </li>
+          <li>
+            <img src="./images/linkedin.png" alt="linkedin" />
+          </li>
+        </ul>
+
+        <!-- copyright -->
+        <p>Copyright ©2024 All rights reserved</p>
+      </div>
+    </footer>
+
+    <!-- ***** -->
+    <!-- JS -->
+    <!-- ***** -->
+    <script src="./index.js"></script>
+  </body>
+</html>
