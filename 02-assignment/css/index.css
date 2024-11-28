@@ -42,6 +42,25 @@ a {
   margin: 0 auto;
 }
 
+.btn {
+  font-size: 20px;
+  line-height: 30px;
+  font-weight: 500;
+  padding: 10px 15px;
+  color: var(--white);
+  background: var(--primary);
+  border-radius: 3px;
+  border: 2px solid var(--primary);
+  outline: none;
+  cursor: pointer;
+  transition: var(--transition);
+}
+.btn:hover {
+  background: var(--secondary);
+  box-shadow: var(--shadow-md);
+  border: 2px solid var(--secondary);
+}
+
 /* ******* */
 /* HEADER */
 /* ******* */
@@ -216,7 +235,16 @@ a {
   color: var(--secondary);
 }
 
-.mainContent button {
+.test-btn {
+  background: var(--white);
+  color: var(--secondary);
+  border: 2px solid var(--secondary);
+}
+.test-btn:hover {
+  background: var(--secondary);
+  color: var(--white);
+}
+/* .mainContent button {
   font-size: 20px;
   line-height: 30px;
   font-weight: 500;
@@ -232,7 +260,7 @@ a {
 .mainContent button:hover {
   background: var(--secondary);
   box-shadow: var(--shadow-md);
-}
+} */
 
 /* ***** */
 /* POSTS */
@@ -323,13 +351,45 @@ a {
   border-top-left-radius: 5px;
   border-top-left-radius: 5px;
   padding: 1rem 2rem;
-  margin-bottom: 2rem;
   cursor: pointer;
-  transition: var(--transition);
   border-bottom: 2px solid var(--dark-gray);
+  position: relative;
+  transition-delay: 0.3s;
 }
+.singleWork::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 0;
+  background: var(--primary);
+  transition: var(--transition);
+}
+.singleWork:hover::before {
+  height: 4px;
+  width: 50%;
+  transform: translateX(100%);
+}
+.singleWork::after {
+  content: '';
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 0;
+  height: 0;
+  background: var(--secondary);
+  transition: var(--transition);
+}
+.singleWork:hover::after {
+  height: 4px;
+  width: 50%;
+  transform: translateX(-100%);
+}
+
 .singleWork:hover {
-  border-bottom: 4px solid var(--primary);
+  transition-delay: 0s;
+  border-color: transparent;
 }
 .workImageContainer {
   width: 100%;
@@ -467,7 +527,7 @@ a {
     gap: 1rem;
   }
   .workContent {
-    padding: 10px 0;
+    /* padding: 10px 0; */
   }
 
   .workImageContainer {
