@@ -540,6 +540,7 @@ a {
 }
 @media screen and (min-width: 1170px) {
   .portfolioContainer {
+    margin-top: 0;
     margin-right: 10rem;
   }
   .postsHeader p {
