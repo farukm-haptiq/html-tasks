@@ -128,6 +128,7 @@ a {
   gap: 15px;
 }
 .navLinks a {
+  display: inline-block;
   color: var(--black-100);
   font-weight: 500;
   font-size: 16px;
@@ -138,6 +139,7 @@ a {
 .navLinks a:hover {
   color: var(--primary-200);
   text-shadow: 1px 1px 1px var(--primary-100);
+  scale: 1.1;
 }
 .langBtn {
   display: flex;
@@ -258,7 +260,15 @@ a {
   height: calc(100vh - 100px);
   /* background: red url('../images/hero.png') no-repeat center/cover; */
 
-  background: var(--primary-200);
+  /* background: var(--primary-200); */
+  background: linear-gradient(
+    89.61deg,
+    #422a3c 55.75%,
+    rgba(66, 42, 60, 0.99) 66.03%,
+    rgba(66, 42, 60, 0.9) 75.96%,
+    rgba(66, 42, 60, 0.81) 99.81%
+  );
+
   display: grid;
   place-items: center;
 }
