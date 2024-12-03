@@ -1,0 +1,660 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Assignment 04</title>
+
+    <!-- GOOGLE FONT -->
+    <!--  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <!-- Playfair Display Font -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Heebo:wght@100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Manrope Font -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Heebo:wght@100..900&family=Manrope:wght@200..800&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- SLICK CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.css"
+    />
+    <!-- // Add the new slick-theme.css if you want the default styling -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css"
+    />
+
+    <!-- CSS STYLES -->
+    <link rel="stylesheet" href="./css/index.css" />
+  </head>
+  <body>
+    <!-- ***** -->
+    <!-- START OF HEADER -->
+    <!-- ***** -->
+
+    <header class="header">
+      <nav class="container nav">
+        <a href="#">
+          <img src="./images/light-logo.svg" alt="logo" class="light-logo" />
+        </a>
+
+        <div id="menuBtn" class="menuBtn">
+          <img src="./images/menu.png" alt="menu btn" />
+        </div>
+
+        <div class="navContainer">
+          <ul class="navLinks">
+            <li>
+              <a href="#">Home</a>
+            </li>
+            <li>
+              <a href="#services">Services</a>
+            </li>
+            <li>
+              <a href="#about">About Us</a>
+            </li>
+            <li>
+              <a href="#about">Contact</a>
+            </li>
+          </ul>
+
+          <button class="langBtn">
+            <span>EN</span>
+            <img src="./icons/chevron-down.svg" alt="chevron-down" />
+          </button>
+
+          <button class="authBtn">Login</button>
+          <button class="authBtn signInBtn">SignUp</button>
+        </div>
+      </nav>
+    </header>
+
+    <aside id="sidebar" class="sidebar">
+      <button id="sidebarCloseBtn" class="sidebarCloseBtn">X</button>
+      <div class="imgContainer">
+        <img src="./images/light-logo.svg" alt="logo" />
+      </div>
+
+      <div class="content">
+        <ul class="sidebarLinks">
+          <li>
+            <a href="#">Home</a>
+          </li>
+          <li>
+            <a href="#services">Services</a>
+          </li>
+          <li>
+            <a href="#about">About Us</a>
+          </li>
+          <li>
+            <a href="#about">Contact</a>
+          </li>
+        </ul>
+
+        <div class="sidebarBtnContainer">
+          <button class="authBtn">Login</button>
+          <button class="authBtn signInBtn">SignUp</button>
+        </div>
+      </div>
+    </aside>
+    <!-- ***** -->
+    <!-- END OF HEADER -->
+    <!-- ***** -->
+
+    <!-- ***** -->
+    <!-- START OF HERO -->
+    <!-- ***** -->
+    <main class="main">
+      <div class="mainContent container">
+        <div class="title">
+          <img src="./images/mini-logo.svg" alt="mini-logo" />
+          <p>Hair Salon, Masseuse, Beauty Salon</p>
+        </div>
+        <h1>
+          Find a service <br />
+          close to you
+        </h1>
+        <p>
+          There are many variation of passages are Ipsum available, majority
+          have suffered alteration in some form.
+        </p>
+
+        <div class="form">
+          <div class="inputGroup">
+            <label for="service">Service Name</label>
+            <div class="formInput">
+              <input
+                id="service"
+                type="text"
+                placeholder="Book your services..."
+              />
+              <img src="./icons/search.svg" alt="search img" />
+            </div>
+          </div>
+
+          <div class="inputGroup">
+            <label for="address">Service Name</label>
+            <div class="formInput">
+              <input id="address" type="text" placeholder="Where..." />
+              <img src="./icons/location.svg" alt="location img" />
+            </div>
+          </div>
+
+          <button type="submit" class="btn submitBtn">
+            <span>Search</span>
+            <img src="./icons/search-white.svg" alt="search img" />
+          </button>
+        </div>
+      </div>
+    </main>
+    <!-- ***** -->
+    <!-- END OF HERO -->
+    <!-- ***** -->
+
+    <!-- ***** -->
+    <!-- START OF SLICK -->
+    <!-- ***** -->
+    <section class="container section">
+      <div class="slider">
+        <!-- start  single slider card -->
+        <div class="singleSlider">
+          <div class="imgContainer">
+            <img src="./images/beautician.png" alt="beautician" />
+          </div>
+          <h5>Makeup-artist</h5>
+        </div>
+        <!-- end single slider card -->
+
+        <!-- start  second slider card -->
+        <div class="singleSlider">
+          <div class="imgContainer">
+            <img src="./images/facial-treatment.png" alt="beautician" />
+          </div>
+          <h5>Wellnesscenter</h5>
+        </div>
+        <!-- end second slider card -->
+
+        <!-- start third slider card -->
+        <div class="singleSlider">
+          <div class="imgContainer">
+            <img src="./images/scissor.png" alt="beautician" />
+          </div>
+          <h5>Barbersalon</h5>
+        </div>
+        <!-- end third slider card -->
+
+        <!-- start fourth slider card -->
+        <div class="singleSlider">
+          <div class="imgContainer">
+            <img src="./images/relax.png" alt="beautician" />
+          </div>
+          <h5>Frisørsalon</h5>
+        </div>
+        <!-- end fourth slider card -->
+
+        <!-- start fifth slider card -->
+        <div class="singleSlider">
+          <div class="imgContainer">
+            <img src="./images/scissor.png" alt="beautician" />
+          </div>
+          <h5>Barbersalon</h5>
+        </div>
+        <!-- end fifth slider card -->
+
+        <!-- start third slider card -->
+        <div class="singleSlider">
+          <div class="imgContainer">
+            <img src="./images/massage.png" alt="beautician" />
+          </div>
+          <h5>Massageklinik</h5>
+        </div>
+        <!-- end third slider card -->
+
+        <!-- start sixth slider card -->
+        <div class="singleSlider">
+          <div class="imgContainer">
+            <img src="./images/foot-massage.png" alt="beautician" />
+          </div>
+          <h5>Fodterapeut</h5>
+        </div>
+        <!-- end sixth slider card -->
+
+        <!-- DUPLICATE COPY -->
+        <!-- start  single slider card -->
+        <div class="singleSlider">
+          <div class="imgContainer">
+            <img src="./images/beautician.png" alt="beautician" />
+          </div>
+          <h5>Makeup-artist</h5>
+        </div>
+        <!-- end single slider card -->
+
+        <!-- start  second slider card -->
+        <div class="singleSlider">
+          <div class="imgContainer">
+            <img src="./images/facial-treatment.png" alt="beautician" />
+          </div>
+          <h5>Wellnesscenter</h5>
+        </div>
+        <!-- end second slider card -->
+
+        <!-- start third slider card -->
+        <div class="singleSlider">
+          <div class="imgContainer">
+            <img src="./images/scissor.png" alt="beautician" />
+          </div>
+          <h5>Barbersalon</h5>
+        </div>
+        <!-- end third slider card -->
+
+        <!-- start fourth slider card -->
+        <div class="singleSlider">
+          <div class="imgContainer">
+            <img src="./images/relax.png" alt="beautician" />
+          </div>
+          <h5>Frisørsalon</h5>
+        </div>
+        <!-- end fourth slider card -->
+
+        <!-- start fifth slider card -->
+        <div class="singleSlider">
+          <div class="imgContainer">
+            <img src="./images/scissor.png" alt="beautician" />
+          </div>
+          <h5>Barbersalon</h5>
+        </div>
+        <!-- end fifth slider card -->
+
+        <!-- start third slider card -->
+        <div class="singleSlider">
+          <div class="imgContainer">
+            <img src="./images/massage.png" alt="beautician" />
+          </div>
+          <h5>Massageklinik</h5>
+        </div>
+        <!-- end third slider card -->
+
+        <!-- start sixth slider card -->
+        <div class="singleSlider">
+          <div class="imgContainer">
+            <img src="./images/foot-massage.png" alt="beautician" />
+          </div>
+          <h5>Fodterapeut</h5>
+        </div>
+        <!-- end sixth slider card -->
+      </div>
+    </section>
+    <!-- ***** -->
+    <!-- END OF SLICK -->
+    <!-- ***** -->
+
+    <!-- ***** -->
+    <!-- START OF SERVICES -->
+    <!-- ***** -->
+    <section id="services" class="container section">
+      <div class="servicesSection">
+        <h4 class="title">our services</h4>
+        <h2 class="subTitle">Recommended</h2>
+        <p class="desc">
+          Lorem ipsum dolor sit amet consectetur. Eu quis enim tempor et proin
+          neque.
+        </p>
+
+        <div class="services">
+          <!-- start of single service -->
+          <div class="singleService">
+            <div class="imgContainer">
+              <img src="./images/img1.png" alt="img1" />
+            </div>
+
+            <div class="content">
+              <div class="ratingAndReview">
+                <!-- ratings -->
+                <div class="rating">
+                  <img src="./icons/review.svg" alt="review icon" />
+                  <span>4.5</span>
+                </div>
+                <!-- review -->
+                <span class="review">104 reviews</span>
+              </div>
+
+              <div class="details">
+                <h3>Salon Name</h3>
+                <div class="location">
+                  <img src="./icons/location-2.svg" alt="location" />
+                  <p>Brookpark Ext, 27085, North Olmsted, 44070</p>
+                </div>
+              </div>
+
+              <button class="btn singleServiceBtn">Book Now</button>
+            </div>
+          </div>
+          <!-- end of single service -->
+
+          <!-- start of second service -->
+          <div class="singleService">
+            <div class="imgContainer">
+              <img src="./images/img2.png" alt="img1" />
+            </div>
+
+            <div class="content">
+              <div class="ratingAndReview">
+                <!-- ratings -->
+                <div class="rating">
+                  <img src="./icons/review.svg" alt="review icon" />
+                  <span>4.5</span>
+                </div>
+                <!-- review -->
+                <span class="review">104 reviews</span>
+              </div>
+
+              <div class="details">
+                <h3>Deluxe Room</h3>
+                <div class="location">
+                  <img src="./icons/location-2.svg" alt="location" />
+                  <p>2267 Main st, Fort Myers, 33901</p>
+                </div>
+              </div>
+
+              <button class="btn singleServiceBtn">Book Now</button>
+            </div>
+          </div>
+          <!-- end of second service -->
+
+          <!-- start of third service -->
+          <div class="singleService">
+            <div class="imgContainer">
+              <img src="./images/img3.png" alt="img1" />
+            </div>
+
+            <div class="content">
+              <div class="ratingAndReview">
+                <!-- ratings -->
+                <div class="rating">
+                  <img src="./icons/review.svg" alt="review icon" />
+                  <span>4.5</span>
+                </div>
+                <!-- review -->
+                <span class="review">94 reviews</span>
+              </div>
+
+              <div class="details">
+                <h3>Meeting Room</h3>
+                <div class="location">
+                  <img src="./icons/location-2.svg" alt="location" />
+                  <p>2267 Main st, Fort Myers, 33901</p>
+                </div>
+              </div>
+
+              <button class="btn singleServiceBtn">Book Now</button>
+            </div>
+          </div>
+          <!-- end of third service -->
+
+          <!-- start of fourth service -->
+          <div class="singleService">
+            <div class="imgContainer">
+              <img src="./images/img4.png" alt="img1" />
+            </div>
+
+            <div class="content">
+              <div class="ratingAndReview">
+                <!-- ratings -->
+                <div class="rating">
+                  <img src="./icons/review.svg" alt="review icon" />
+                  <span>4.5</span>
+                </div>
+                <!-- review -->
+                <span class="review">104 reviews</span>
+              </div>
+
+              <div class="details">
+                <h3>Deluxe Room</h3>
+                <div class="location">
+                  <img src="./icons/location-2.svg" alt="location" />
+                  <p>2267 Main st, Fort Myers, 33901</p>
+                </div>
+              </div>
+
+              <button class="btn singleServiceBtn">Book Now</button>
+            </div>
+          </div>
+          <!-- end of fourth service -->
+
+          <!-- TOGGLE ARROW -->
+          <div class="leftArrow">
+            <img src="./icons/arrow-left.svg" alt="arrow left" />
+          </div>
+          <div class="rightArrow">
+            <img src="./icons/arrow-right.png" alt="arrow right" />
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ***** -->
+    <!-- END OF SERVICES -->
+    <!-- ***** -->
+
+    <!-- ***** -->
+    <!-- START OF TESTIMONIALS -->
+    <!-- ***** -->
+    <section id="testimonials" class="testimonialSection">
+      <div class="container section">
+        <h4 class="title">Testimonials</h4>
+        <h2 class="subTitle">What our Customers says...</h2>
+
+        <div class="testimonials">
+          <!-- single review -->
+          <div class="singleReview">
+            <div class="imgContainer">
+              <img src="./images/Ellipse1.png" alt="Ellipse1" />
+            </div>
+
+            <div class="content">
+              <img
+                src="./icons/quote-right.png"
+                alt="quote-left"
+                class="quoteRight"
+              />
+
+              <img
+                src="./icons/quote-left.png"
+                alt="quote-left"
+                class="quoteLeft"
+              />
+              <h5 class="reviewUsername">Leslie Alexander</h5>
+
+              <p class="reviewLocation">Moncton, Canada</p>
+
+              <h4 class="reviewTitle">Neque porro quisquam est qui dolum</h4>
+
+              <p class="reviewMessage">
+                “ It is a long established fact that a reader will be tracked
+                distracted by the readable content of a page is when looking at
+                its layout. The point of using Lorem of distribution it look
+                like readable English “
+              </p>
+            </div>
+          </div>
+          <!-- end of single review -->
+        </div>
+
+        <!-- btn container -->
+        <div class="btnContainer">
+          <button class="prevBtn">
+            <img src="./icons/left.png" alt="left arrow" />
+          </button>
+
+          <button class="rightBtn">
+            <img src="./icons/right.png" alt="left arrow" />
+          </button>
+        </div>
+      </div>
+    </section>
+    <!-- ***** -->
+    <!-- END OF TESTIMONIALS -->
+    <!-- ***** -->
+
+    <!-- ***** -->
+    <!-- START OF FOOTER -->
+    <!-- ***** -->
+    <footer id="about" class="footer">
+      <div class="container">
+        <div class="footerSection">
+          <div class="logoAndSocialLinksContainer">
+            <div class="logo">
+              <img src="./images/dark-logo.png" alt="" />
+            </div>
+
+            <ul class="footerSocialLinks">
+              <li>
+                <a href="https://facebook.com" target="_blank"
+                  ><img src="./icons/facebook.svg" alt="facebook"
+                /></a>
+              </li>
+              <li>
+                <a href="https://twitter.com" target="_blank"
+                  ><img src="./icons/twitter.svg" alt="twitter"
+                /></a>
+              </li>
+              <li>
+                <a href="https://linkedin.com" target="_blank"
+                  ><img src="./icons/linkedin.svg" alt="linkedin"
+                /></a>
+              </li>
+              <li>
+                <a href="https://instagram.com" target="_blank"
+                  ><img src="./icons/instagram.svg" alt="instagram"
+                /></a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="divider"></div>
+
+          <!-- Navigation links -->
+          <div class="content">
+            <div class="footerNavigationLinks">
+              <h4>Explore</h4>
+              <ul class="footerLinks">
+                <li>
+                  <a href="#">Home</a>
+                </li>
+                <li>
+                  <a href="#about">About Us</a>
+                </li>
+                <li>
+                  <a href="#services">Services</a>
+                </li>
+
+                <li>
+                  <a href="#testimonials">Blogs</a>
+                </li>
+                <li>
+                  <a href="#about">Contact Us</a>
+                </li>
+              </ul>
+            </div>
+
+            <div class="footerNavigationLinks">
+              <h4>Utility Pages</h4>
+              <ul class="footerLinks">
+                <li>
+                  <a href="#policy">Privacy Policy</a>
+                </li>
+                <li>
+                  <a href="#termsAndConditions">Terms of Use</a>
+                </li>
+              </ul>
+            </div>
+
+            <div class="footerContact">
+              <h4>Keep in Touch</h4>
+              <div class="contactInfo">
+                <div>
+                  <h5>Address:</h5>
+                  <p>Mariendalsvej 50D 2 2000 Frederiksberg.</p>
+                </div>
+                <div>
+                  <h5>Mail:</h5>
+                  <p>support@servicemarket.com</p>
+                </div>
+                <div>
+                  <h5>Phone:</h5>
+                  <p>(+22) 123 - 4567 - 900</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="copyRightSection">
+        <p>© Copyright 2023, ServiceMarket.dk | All rights reserved.</p>
+      </div>
+    </footer>
+    <!-- ***** -->
+    <!-- END OF FOOTER -->
+    <!-- ***** -->
+
+    <!-- ****** -->
+    <!-- SCRIPT -->
+    <!-- ****** -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+      integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery-migrate/3.5.2/jquery-migrate.min.js"
+      integrity="sha512-BzvgYEoHXuphX+g7B/laemJGYFdrq4fTKEo+B3PurSxstMZtwu28FHkPKXu6dSBCzbUWqz/rMv755nUwhjQypw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"
+      integrity="sha512-HGOnQO9+SP1V92SrtZfjqxxtLmVzqZpjFFekvzZVWoiASSQgSr4cw9Kqd2+l8Llp4Gm0G8GIFJ4ddwZilcdb8A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script type="text/javascript">
+      $('.slider').slick({
+        infinite: true,
+        speed: 300,
+        slidesToShow: 7,
+        slidesToScroll: 1,
+        prevArrow:
+          '<button class="slickPrev" style="left: 0;"><img src="./icons/arrow-left.svg" alt="Prev"></button>',
+        nextArrow:
+          '<button class="slickNext" style="right: 0;"><img src="./icons/arrow-right.png" alt="Next"></button>',
+        responsive: [
+          {
+            breakpoint: 990, // Less than 990px
+            settings: {
+              slidesToShow: 6, // Show 5 slides
+              slidesToScroll: 1,
+            },
+          },
+          {
+            breakpoint: 768, // Less than 768px
+            settings: {
+              slidesToShow: 3, // Show 3 slides
+              slidesToScroll: 1,
+            },
+          },
+        ],
+      });
+    </script>
+
+    <script src="./index.js"></script>
+  </body>
+</html>
