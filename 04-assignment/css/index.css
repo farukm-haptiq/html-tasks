@@ -269,7 +269,7 @@ a {
 /* HERO STYLES */
 /* ****** */
 .main {
-  height: calc(100vh - 100px);
+  min-height: calc(100vh - 100px);
   /* background: red url('../images/hero.png') no-repeat center/cover; */
 
   /* background: var(--primary-200); */
@@ -858,8 +858,9 @@ a {
         rgba(66, 42, 60, 0.31) 65.81%,
         rgba(66, 42, 60, 0) 99.7%
       ),
-      url('../images/hero.png') no-repeat right/55% 100%;
+      url('../images/hero.png') no-repeat right/cover;
   }
+
   .leftArrow,
   .rightArrow {
     display: block;
