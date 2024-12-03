@@ -42,7 +42,7 @@
 
     <header class="header">
       <nav class="container nav">
-        <a href="#">
+        <a href="#" class="logoLink">
           <img src="./images/light-logo.svg" alt="logo" class="light-logo" />
         </a>
 
@@ -68,7 +68,9 @@
 
           <button class="langBtn">
             <span>EN</span>
-            <img src="./icons/chevron-down.svg" alt="chevron-down" />
+            <div class="imgcontainer">
+              <img src="./icons/chevron-down.svg" alt="chevron-down" />
+            </div>
           </button>
 
           <button class="authBtn">Login</button>
@@ -115,7 +117,9 @@
     <main class="main">
       <div class="mainContent container">
         <div class="title">
-          <img src="./images/mini-logo.svg" alt="mini-logo" />
+          <div class="imgContainer">
+            <img src="./images/mini-logo.svg" alt="mini-logo" />
+          </div>
           <p>Hair Salon, Masseuse, Beauty Salon</p>
         </div>
         <h1>
@@ -136,7 +140,9 @@
                 type="text"
                 placeholder="Book your services..."
               />
-              <img src="./icons/search.svg" alt="search img" />
+              <div class="imgContainer">
+                <img src="./icons/search.svg" alt="search img" />
+              </div>
             </div>
           </div>
 
@@ -144,13 +150,17 @@
             <label for="address">Service Name</label>
             <div class="formInput">
               <input id="address" type="text" placeholder="Where..." />
-              <img src="./icons/location.svg" alt="location img" />
+              <div class="imgContainer">
+                <img src="./icons/location.svg" alt="location img" />
+              </div>
             </div>
           </div>
 
           <button type="submit" class="btn submitBtn">
             <span>Search</span>
-            <img src="./icons/search-white.svg" alt="search img" />
+            <div class="imgContainer">
+              <img src="./icons/search-white.svg" alt="search img" />
+            </div>
           </button>
         </div>
       </div>
@@ -319,7 +329,9 @@
               <div class="ratingAndReview">
                 <!-- ratings -->
                 <div class="rating">
-                  <img src="./icons/review.svg" alt="review icon" />
+                  <div class="ratingImgContainer">
+                    <img src="./icons/review.svg" alt="review icon" />
+                  </div>
                   <span>4.5</span>
                 </div>
                 <!-- review -->
@@ -329,7 +341,9 @@
               <div class="details">
                 <h3>Salon Name</h3>
                 <div class="location">
-                  <img src="./icons/location-2.svg" alt="location" />
+                  <div class="locationImgContainer">
+                    <img src="./icons/location-2.svg" alt="location" />
+                  </div>
                   <p>Brookpark Ext, 27085, North Olmsted, 44070</p>
                 </div>
               </div>
@@ -349,7 +363,9 @@
               <div class="ratingAndReview">
                 <!-- ratings -->
                 <div class="rating">
-                  <img src="./icons/review.svg" alt="review icon" />
+                  <div class="ratingImgContainer">
+                    <img src="./icons/review.svg" alt="review icon" />
+                  </div>
                   <span>4.5</span>
                 </div>
                 <!-- review -->
@@ -359,7 +375,9 @@
               <div class="details">
                 <h3>Deluxe Room</h3>
                 <div class="location">
-                  <img src="./icons/location-2.svg" alt="location" />
+                  <div class="locationImgContainer">
+                    <img src="./icons/location-2.svg" alt="location" />
+                  </div>
                   <p>2267 Main st, Fort Myers, 33901</p>
                 </div>
               </div>
@@ -379,7 +397,9 @@
               <div class="ratingAndReview">
                 <!-- ratings -->
                 <div class="rating">
-                  <img src="./icons/review.svg" alt="review icon" />
+                  <div class="ratingImgContainer">
+                    <img src="./icons/review.svg" alt="review icon" />
+                  </div>
                   <span>4.5</span>
                 </div>
                 <!-- review -->
@@ -389,7 +409,9 @@
               <div class="details">
                 <h3>Meeting Room</h3>
                 <div class="location">
-                  <img src="./icons/location-2.svg" alt="location" />
+                  <div class="locationImgContainer">
+                    <img src="./icons/location-2.svg" alt="location" />
+                  </div>
                   <p>2267 Main st, Fort Myers, 33901</p>
                 </div>
               </div>
@@ -409,7 +431,9 @@
               <div class="ratingAndReview">
                 <!-- ratings -->
                 <div class="rating">
-                  <img src="./icons/review.svg" alt="review icon" />
+                  <div class="ratingImgContainer">
+                    <img src="./icons/review.svg" alt="review icon" />
+                  </div>
                   <span>4.5</span>
                 </div>
                 <!-- review -->
@@ -419,7 +443,9 @@
               <div class="details">
                 <h3>Deluxe Room</h3>
                 <div class="location">
-                  <img src="./icons/location-2.svg" alt="location" />
+                  <div class="locationImgContainer">
+                    <img src="./icons/location-2.svg" alt="location" />
+                  </div>
                   <p>2267 Main st, Fort Myers, 33901</p>
                 </div>
               </div>
@@ -459,17 +485,21 @@
             </div>
 
             <div class="content">
-              <img
-                src="./icons/quote-right.png"
-                alt="quote-left"
-                class="quoteRight"
-              />
+              <div class="quoteArrow">
+                <img
+                  src="./icons/quote-right.png"
+                  alt="quote-left"
+                  class="quoteRight"
+                />
+              </div>
+              <div class="quoteArrow">
+                <img
+                  src="./icons/quote-left.png"
+                  alt="quote-left"
+                  class="quoteLeft"
+                />
+              </div>
 
-              <img
-                src="./icons/quote-left.png"
-                alt="quote-left"
-                class="quoteLeft"
-              />
               <h5 class="reviewUsername">Leslie Alexander</h5>
 
               <p class="reviewLocation">Moncton, Canada</p>
