@@ -858,7 +858,7 @@ a {
         rgba(66, 42, 60, 0.31) 65.81%,
         rgba(66, 42, 60, 0) 99.7%
       ),
-      url('../images/hero.png') no-repeat right/cover;
+      url('../images/hero.png') no-repeat right/65% 100%;
   }
 
   .leftArrow,

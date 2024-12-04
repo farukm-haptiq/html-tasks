@@ -1,0 +1,656 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- ***** -->
+    <!-- bootstrap -->
+    <!-- ***** -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Heebo:wght@100..900&family=Manrope:wght@200..800&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- CSS Styles -->
+    <link rel="stylesheet" href="./css/index.css" />
+
+    <title>Assignment 5</title>
+  </head>
+  <body>
+    <!-- ***** -->
+    <!-- HEADER -->
+    <!-- ***** -->
+    <nav
+      id="nav"
+      class="navbar py-3 navbar-expand-md navbar-dark bg-dark customNavbar"
+    >
+      <div class="container">
+        <a href="#" class="navbar-brand logo">BrandName</a>
+
+        <!-- navbar mobile icons -->
+        <div class="d-flex align-items-center">
+          <button class="btn me-2 d-md-none">
+            <img src="./icons/search.svg" alt="search icon" />
+          </button>
+          <button class="btn me-2 d-md-none">
+            <img src="./icons/shoppingCart.svg" alt="shopping cart icon" />
+          </button>
+          <button
+            class="btn navbar-toggler border-0"
+            data-bs-toggle="collapse"
+            data-bs-target="#menu"
+          >
+            <img src="./icons/menu.svg" alt="menu icon" />
+          </button>
+        </div>
+
+        <!--  Navigation Links -->
+        <div
+          id="menu"
+          class="collapse navbar-collapse d-md-flex justify-content-between"
+        >
+          <ul class="navbar-nav ms-auto ms-md-0 ms-lg-5 text-center navLinks">
+            <li class="nav-item">
+              <a class="nav-link active navLink" href="#">Home</a>
+            </li>
+            <li class="nav-item navLink">
+              <a class="nav-link" href="#">Product</a>
+            </li>
+            <li class="nav-item navLink">
+              <a class="nav-link" href="#">Pricing</a>
+            </li>
+            <li class="nav-item navLink">
+              <a class="nav-link" href="#">Contact</a>
+            </li>
+          </ul>
+
+          <div class="d-none d-md-flex authBtnContainer">
+            <a href="#" class="loginBtn">Login</a>
+            <button class="btn memberBtn">
+              Become a member
+              <div class="memberBtnRightArrowContainer">
+                <img src="./icons/rightArrow.svg" alt="right arrow" />
+              </div>
+            </button>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- ***** -->
+    <!-- END OF HEADER -->
+    <!-- ***** -->
+
+    <!-- ***** -->
+    <!-- START OF HERO -->
+    <!-- ***** -->
+    <main class="hero">
+      <div class="container d-flex align-items-center heroSection">
+        <div class="content row">
+          <div class="col-lg-8 text-center text-md-start">
+            <h1>We Ensure A Best Insurance Service</h1>
+            <p>
+              We know how large objects will act, but things on a small scale.
+            </p>
+            <div class="heroBtnContainer">
+              <button class="btn btn-primary">Get Quote Now</button>
+              <button class="btn btn-outline-primary">Learn More</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- ***** -->
+    <!-- End OF HERO -->
+    <!-- ***** -->
+
+    <!-- ***** -->
+    <!-- START OF FEATURES -->
+    <!-- ***** -->
+    <section class="features">
+      <div class="container px-5">
+        <div class="row gy-5 row-cols-1 row-cols-md-2 row-cols-lg-3">
+          <!-- start of single feature -->
+          <div class="col singleFeature">
+            <div class="featureImgContainer">
+              <img src="./icons/wallet.svg" alt="wallet" />
+            </div>
+            <h5>Peace Of Mind</h5>
+            <p>So it really behaves like neither. Now we have given up.</p>
+          </div>
+          <!-- end of single feature -->
+
+          <!-- start of second feature -->
+          <div class="col singleFeature">
+            <div class="featureImgContainer">
+              <img src="./icons/bookmark.svg" alt="bookmark" />
+            </div>
+            <h5>Set For Life</h5>
+            <p>They were used to create the machines that launched.</p>
+          </div>
+          <!-- end of second feature -->
+
+          <!-- start of third feature -->
+          <div class="col singleFeature">
+            <div class="featureImgContainer">
+              <img src="./icons/personOutline.svg" alt="personOutline" />
+            </div>
+            <h5>100% Satisfaction</h5>
+            <p>So it really behaves like neither. Now we have given up.</p>
+          </div>
+          <!-- end of third feature -->
+        </div>
+      </div>
+    </section>
+    <!-- ***** -->
+    <!-- END OF FEATURES -->
+    <!-- ***** -->
+
+    <!-- ***** -->
+    <!-- START OF INDUSTRY -->
+    <!-- ***** -->
+    <section class="industry">
+      <h2 class="title">Industry</h2>
+      <p class="desc">
+        Problems trying to resolve the conflict between the two major realms of
+        Classical physics: Newtonian mechanics
+      </p>
+
+      <div class="container">
+        <div class="row row-cols-1 row-cols-md-2 px-3 gy-4">
+          <!-- start of single review -->
+          <div class="col-md-5 card singleReview">
+            <div class="reviewImgContainer">
+              <img src="./images/user1.png" alt="user 1" />
+            </div>
+            <div class="cardHeader">
+              <h3>Regina Miles</h3>
+              <h6>Designer</h6>
+            </div>
+            <div class="stars d-flex">
+              <div class="singleStartContainer">
+                <img src="./icons/fillStart.svg" alt="fillStart" />
+              </div>
+              <div class="singleStartContainer">
+                <img src="./icons/fillStart.svg" alt="fillStart" />
+              </div>
+              <div class="singleStartContainer">
+                <img src="./icons/fillStart.svg" alt="fillStart" />
+              </div>
+              <div class="singleStartContainer">
+                <img src="./icons/fillStart.svg" alt="fillStart" />
+              </div>
+              <div class="singleStartContainer">
+                <img src="./icons/emptyStar.svg" alt="fillStart" />
+              </div>
+            </div>
+
+            <p>
+              This proved to be impossible using the traditional concepts of
+              space and time. Einstein developed a new view of time first and
+              then space. This proved to be impossible using the traditional
+              concepts of space and time. Einstein developed a new view of time
+              first and then space.
+            </p>
+          </div>
+          <!-- end of single review -->
+
+          <!-- start of second review -->
+          <div class="col-md-5 offset-md-2 card singleReview">
+            <div class="reviewImgContainer">
+              <img src="./images/user2.png" alt="user 1" />
+            </div>
+            <div class="cardHeader">
+              <h3>Regina Miles</h3>
+              <h6>Designer</h6>
+            </div>
+            <div class="stars d-flex">
+              <div class="singleStartContainer">
+                <img src="./icons/fillStart.svg" alt="fillStart" />
+              </div>
+              <div class="singleStartContainer">
+                <img src="./icons/fillStart.svg" alt="fillStart" />
+              </div>
+              <div class="singleStartContainer">
+                <img src="./icons/fillStart.svg" alt="fillStart" />
+              </div>
+              <div class="singleStartContainer">
+                <img src="./icons/fillStart.svg" alt="fillStart" />
+              </div>
+              <div class="singleStartContainer">
+                <img src="./icons/emptyStar.svg" alt="fillStart" />
+              </div>
+            </div>
+
+            <p>
+              This proved to be impossible using the traditional concepts of
+              space and time. Einstein developed a new view of time first and
+              then space. This proved to be impossible using the traditional
+              concepts of space and time. Einstein developed a new view of time
+              first and then space.
+            </p>
+          </div>
+          <!-- end of second review -->
+        </div>
+      </div>
+    </section>
+    <!-- ***** -->
+    <!-- END OF INDUSTRY -->
+    <!-- ***** -->
+
+    <!-- ***** -->
+    <!-- START OF PRICING -->
+    <!-- ***** -->
+    <section class="pricing">
+      <h2 class="title">Pricing</h2>
+      <p class="desc">
+        Problems trying to resolve the conflict between the two major realms of
+        Classical physics: Newtonian mechanics
+      </p>
+
+      <div class="container">
+        <div class="subscriptionContainer">
+          <!-- start of single subscription -->
+          <div class="singleOffer">
+            <h3>Free</h3>
+            <h5>Organize across all apps by hand</h5>
+            <h2>0$</h2>
+            <h5>Per Month</h5>
+
+            <button class="btn btn-primary subscriptionBtn">
+              Try For Free
+            </button>
+
+            <ul class="subscriptionDetails">
+              <li>
+                <div class="checkIconContainer">
+                  <img src="./icons/check.svg" alt="check" />
+                </div>
+                <h6>Unlimited product updates</h6>
+              </li>
+              <li>
+                <div class="checkIconContainer">
+                  <img src="./icons/check.svg" alt="check" />
+                </div>
+                <h6>Unlimited product updates</h6>
+              </li>
+              <li>
+                <div class="checkIconContainer">
+                  <img src="./icons/check.svg" alt="check" />
+                </div>
+                <h6>Unlimited product updates</h6>
+              </li>
+
+              <li>
+                <div class="checkIconContainer">
+                  <img src="./icons/check.svg" alt="check" />
+                </div>
+                <h6>1GB Cloud storage</h6>
+              </li>
+              <li>
+                <div class="checkIconContainer">
+                  <img src="./icons/check.svg" alt="check" />
+                </div>
+                <h6>Email and community support</h6>
+              </li>
+            </ul>
+          </div>
+          <!-- end of single subscription -->
+
+          <!-- start of second subscription -->
+          <div class="singleOffer">
+            <h3>Silver</h3>
+            <h5>Organize across all apps by hand</h5>
+            <h2>9.99$</h2>
+            <h5>Per Month</h5>
+
+            <button class="btn btn-primary subscriptionBtn">
+              Try For Free
+            </button>
+
+            <ul class="subscriptionDetails">
+              <li>
+                <div class="checkIconContainer">
+                  <img src="./icons/check.svg" alt="check" />
+                </div>
+                <h6>Unlimited product updates</h6>
+              </li>
+              <li>
+                <div class="checkIconContainer">
+                  <img src="./icons/check.svg" alt="check" />
+                </div>
+                <h6>Unlimited product updates</h6>
+              </li>
+              <li>
+                <div class="checkIconContainer">
+                  <img src="./icons/check.svg" alt="check" />
+                </div>
+                <h6>Unlimited product updates</h6>
+              </li>
+
+              <li>
+                <div class="checkIconContainer">
+                  <img src="./icons/check.svg" alt="check" />
+                </div>
+                <h6>1GB Cloud storage</h6>
+              </li>
+              <li>
+                <div class="checkIconContainer">
+                  <img src="./icons/check.svg" alt="check" />
+                </div>
+                <h6>Email and community support</h6>
+              </li>
+            </ul>
+          </div>
+          <!-- end of second subscription -->
+
+          <!-- start of third subscription -->
+          <div class="singleOffer">
+            <h3>Gold</h3>
+            <h5>Organize across all apps by hand</h5>
+            <h2>19.99$</h2>
+            <h5>Per Month</h5>
+
+            <button class="btn btn-primary subscriptionBtn">
+              Try For Free
+            </button>
+
+            <ul class="subscriptionDetails">
+              <li>
+                <div class="checkIconContainer">
+                  <img src="./icons/check.svg" alt="check" />
+                </div>
+                <h6>Unlimited product updates</h6>
+              </li>
+              <li>
+                <div class="checkIconContainer">
+                  <img src="./icons/check.svg" alt="check" />
+                </div>
+                <h6>Unlimited product updates</h6>
+              </li>
+              <li>
+                <div class="checkIconContainer">
+                  <img src="./icons/check.svg" alt="check" />
+                </div>
+                <h6>Unlimited product updates</h6>
+              </li>
+
+              <li>
+                <div class="checkIconContainer">
+                  <img src="./icons/check.svg" alt="check" />
+                </div>
+                <h6>1GB Cloud storage</h6>
+              </li>
+              <li>
+                <div class="checkIconContainer">
+                  <img src="./icons/check.svg" alt="check" />
+                </div>
+                <h6>Email and community support</h6>
+              </li>
+            </ul>
+          </div>
+          <!-- end of third subscription -->
+        </div>
+      </div>
+    </section>
+    <!-- ***** -->
+    <!-- END OF PRICING -->
+    <!-- ***** -->
+
+    <!-- ***** -->
+    <!-- START OF CONTACT -->
+    <!-- ***** -->
+    <div class="contact">
+      <div class="container contactSection px-5">
+        <h5>Contact Us</h5>
+        <h2>Make an Appointment</h2>
+
+        <div class="row formSection">
+          <form class="form col-lg-7">
+            <div class="formInputSection">
+              <input
+                type="text"
+                name="fullName"
+                id="fullName"
+                class="form-control form-control-lg formInput"
+                placeholder="Full Name *"
+              />
+              <input
+                type="email"
+                name="email"
+                id="email"
+                class="form-control form-control-lg formInput"
+                placeholder="Email *"
+              />
+
+              <select
+                name="option"
+                class="form-select form-control-lg seclecInput selectInput"
+              >
+                <option value="" disabled selected>Please Select</option>
+                <option value="1">Option 1</option>
+                <option value="2">Option 2</option>
+                <option value="1">Option 3</option>
+                <option value="1">Option 4</option>
+              </select>
+
+              <select
+                name="time"
+                class="form-select form-control-lg selectInput"
+              >
+                <option value="" disabled selected>04:45 Available</option>
+                <option value="1">Option 1</option>
+                <option value="2">Option 2</option>
+                <option value="1">Option 3</option>
+                <option value="1">Option 4</option>
+              </select>
+
+              <textarea
+                class="form-control textAreaInput"
+                placeholder="Message"
+                id="floatingTextarea"
+                rows="4"
+              ></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary submitBtn">
+              Book Appointment
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <!-- ***** -->
+    <!-- END OF CONTACT -->
+    <!-- ***** -->
+
+    <!-- ***** -->
+    <!-- START OF CONTACT  INFO-->
+    <!-- ***** -->
+    <div class="contactInfo">
+      <div
+        class="container contactInfoSection d-md-flex justify-content-between align-items-center px-5"
+      >
+        <div class="content">
+          <h3>Consulting Agency For Your Business</h3>
+          <p>the quick fox jumps over the lazy dog</p>
+        </div>
+        <button class="btn btn-primary contactUsBtn mt-4 mt-md-0">
+          Contact Us
+        </button>
+      </div>
+    </div>
+    <!-- ***** -->
+    <!-- END OF CONTACT INFO-->
+    <!-- ***** -->
+
+    <!-- ***** -->
+    <!-- START OF FOOTER-->
+    <!-- ***** -->
+    <footer>
+      <div class="footer">
+        <div class="container">
+          <div class="mx-5 footerSection">
+            <div class="companyInfoContainer footerLinksContainer">
+              <h5>Company Info</h5>
+              <ul>
+                <li>
+                  <a href="#">About Us</a>
+                </li>
+
+                <li>
+                  <a href="#">Carrier</a>
+                </li>
+                <li>
+                  <a href="#">We are hiring</a>
+                </li>
+                <li>
+                  <a href="#">Blogs</a>
+                </li>
+              </ul>
+            </div>
+
+            <div class="legalContainer footerLinksContainer">
+              <h5>Legal</h5>
+              <ul>
+                <li>
+                  <a href="#">About Us</a>
+                </li>
+
+                <li>
+                  <a href="#">Carrier</a>
+                </li>
+                <li>
+                  <a href="#">We are hiring</a>
+                </li>
+                <li>
+                  <a href="#">Blogs</a>
+                </li>
+              </ul>
+            </div>
+
+            <div class="featuresContainer footerLinksContainer">
+              <h5>Features</h5>
+              <ul>
+                <li>
+                  <a href="#">Business Marketing</a>
+                </li>
+
+                <li>
+                  <a href="#">User Analytics</a>
+                </li>
+                <li>
+                  <a href="#">Live Chat</a>
+                </li>
+                <li>
+                  <a href="#">Unlimited Support</a>
+                </li>
+              </ul>
+            </div>
+
+            <div class="resourcesContainer footerLinksContainer">
+              <h5>Resources</h5>
+              <ul>
+                <li>
+                  <a href="#">IOS and Android</a>
+                </li>
+
+                <li>
+                  <a href="#">Watch a Demo</a>
+                </li>
+                <li>
+                  <a href="#">Customers</a>
+                </li>
+                <li>
+                  <a href="#">API</a>
+                </li>
+              </ul>
+            </div>
+
+            <div class="getInTouchContainer footerLinksContainer">
+              <h5>Get in Touch</h5>
+              <ul>
+                <li>
+                  <div class="socialInfoImgContainer">
+                    <img src="./icons/telephone.svg" alt="telephone" />
+                  </div>
+                  <span>(480) 555-0103</span>
+                </li>
+
+                <li>
+                  <div class="socialInfoImgContainer">
+                    <img src="./icons/location.svg" alt="location" />
+                  </div>
+                  <span>4517 Washington Ave. </span>
+                </li>
+                <li>
+                  <div class="socialInfoImgContainer">
+                    <img src="./icons/envelope.svg" alt="envelop" />
+                  </div>
+                  <span
+                    >debra.holt@ <br />
+                    example.com</span
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="footerInfo">
+        <div class="container">
+          <div
+            class="content mx-5 d-md-flex justify-content-between align-items-center"
+          >
+            <h6>Made With Love By Figmaland All Right Reserved</h6>
+
+            <ul class="mt-4 mt-md-0">
+              <li>
+                <a href="#">
+                  <img src="./icons/facebook.svg" alt="facebook" />
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img src="./icons/instagram.svg" alt="instagram" />
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img src="./icons/twitter.svg" alt="twitter" />
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- ***** -->
+    <!-- END OF FOOTER-->
+    <!-- ***** -->
+
+    <!-- ****** -->
+    <!-- JS -->
+    <!-- ****** -->
+    <script src="./index.js"></script>
+  </body>
+</html>
