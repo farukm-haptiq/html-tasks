@@ -518,8 +518,11 @@ span {
 
 @media screen and (min-width: 768px) {
   .customNavbar {
-    background-color: transparent !important; /* Make background transparent */
+    background-color: transparent !important;
     transition: var(--transition-300);
+  }
+  .customNavbar.navBg {
+    background: rgba(0, 0, 0, 0.5) !important;
   }
 
   .navLink {
