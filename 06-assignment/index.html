@@ -1,0 +1,756 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- ***** -->
+    <!-- bootstrap -->
+    <!-- ***** -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- GOOGLE FONT -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Heebo:wght@100..900&family=Manrope:wght@200..800&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:wght@400;500;600;700;800&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- SLICK CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.css"
+    />
+    <!-- // Add the new slick-theme.css if you want the default styling -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css"
+    />
+
+    <!-- CSS STYLES -->
+    <link rel="stylesheet" href="./css/index.css" />
+
+    <title>Assignment 6</title>
+  </head>
+  <body>
+    <!-- ***** -->
+    <!-- START OF NAV -->
+    <!-- ***** -->
+    <nav
+      id="nav"
+      class="navbar py-3 navbar-expand-md navbar-dark d-md-flex justify-content-between customNavbar"
+    >
+      <div class="container">
+        <a
+          href="#"
+          class="navbar-brand logo d-flex align-items-center gap-1 logoContainer"
+        >
+          <div class="logoImgContainer">
+            <img src="./icons/logo.svg" alt="logo" />
+          </div>
+          <h3>FOOD <span>Wagon</span></h3>
+        </a>
+
+        <!-- navbar mobile icons -->
+        <button
+          class="btn navbar-toggler border-0"
+          data-bs-toggle="collapse"
+          data-bs-target="#menu"
+        >
+          <img src="./icons/menu.svg" alt="menu icon" />
+        </button>
+
+        <!--  MOBILE NAV LINKS -->
+        <div id="menu" class="collapse navbar-collapse d-md-flex">
+          <ul
+            class="navbar-nav text-center navLinks ms-lg-auto me-lg-auto d-md-none"
+          >
+            <li class="nav-item">
+              <a class="nav-link active navLink" href="#">Home</a>
+            </li>
+            <li class="nav-item navLink">
+              <a class="nav-link" href="#">Order</a>
+            </li>
+            <li class="nav-item navLink">
+              <a class="nav-link" href="#">Pricing</a>
+            </li>
+            <li class="nav-item navLink">
+              <a class="nav-link" href="#">Contact</a>
+            </li>
+          </ul>
+
+          <div
+            class="d-none d-md-flex flex-column flex-xl-row gap-1 ms-lg-auto me-lg-auto"
+          >
+            <div class="d-xl-flex align-items-center">
+              <span class="addressText">Deliver to : </span>
+              <div class="iconImgContainer ms-1 me-1">
+                <img src="./icons/map.svg" alt="map" />
+              </div>
+              <span class="addressText currentLocation">current location</span>
+            </div>
+
+            <span class="addressText">Mohammadpur Bus Stand, Dhaka</span>
+          </div>
+
+          <div class="d-none d-md-flex gap-2 gap-xl-4 align-items-center">
+            <div class="d-flex align-items-center gap-1">
+              <div class="iconImgContainer">
+                <img src="./icons/search.svg" alt="searchIcon" />
+              </div>
+              <input
+                type="text"
+                placeholder="Search Food"
+                class="headerSearch"
+              />
+            </div>
+            <button class="btn loginBtn">
+              <span>Login</span>
+              <div class="iconImgContainer">
+                <img src="./icons/user.svg" alt="user" />
+              </div>
+            </button>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- ***** -->
+    <!-- END OF NAV -->
+    <!-- ***** -->
+
+    <!-- ***** -->
+    <!-- START OF HEADER -->
+    <!-- ***** -->
+    <main class="hero d-grid align-items-center">
+      <div class="container heroContainer">
+        <div class="row text-center text-md-start">
+          <div class="col col-lg-7 heroContent">
+            <h1>Are you starving?</h1>
+            <p>Within a few clicks, find meals that are accessible near you</p>
+
+            <div class="mt-5 heroTab">
+              <!-- Tabs Navigation -->
+              <ul class="nav heroTabLinks gap-2">
+                <li>
+                  <button
+                    class="nav-link active"
+                    data-bs-toggle="tab"
+                    data-bs-target="#tab1"
+                  >
+                    <div class="imgContainer">
+                      <img src="./icons/bike.svg" alt="bike" />
+                    </div>
+                    <span>Delivery</span>
+                  </button>
+                </li>
+                <li>
+                  <button
+                    class="nav-link"
+                    id="tab2-tab"
+                    data-bs-toggle="tab"
+                    data-bs-target="#tab2"
+                  >
+                    <div class="imgContainer">
+                      <img src="./icons/bag.svg" alt="bag" />
+                    </div>
+                    <span>Pickup</span>
+                  </button>
+                </li>
+              </ul>
+
+              <!-- Tabs Content -->
+              <div class="tab-content">
+                <div class="tab-pane fade show active" id="tab1">
+                  <form class="heroForm">
+                    <div class="formContent">
+                      <div class="formInput">
+                        <div class="iconImgContainer">
+                          <img src="./icons/location.svg" alt="location" />
+                        </div>
+                        <div class="inputForm">
+                          <input
+                            type="text"
+                            placeholder="Enter Your Address"
+                            class="textInput"
+                          />
+                        </div>
+                      </div>
+                      <button type="submit" class="btn submitBtn">
+                        <div class="iconImgContainer">
+                          <img src="./icons/search.svg" alt="search" />
+                        </div>
+                        Find Food
+                      </button>
+                    </div>
+                  </form>
+                </div>
+                <div class="tab-pane fade" id="tab2">
+                  <form class="heroForm">
+                    <div class="formContent">
+                      <div class="formInput">
+                        <div class="iconImgContainer">
+                          <img src="./icons/user.svg" alt="location" />
+                        </div>
+                        <div class="inputForm">
+                          <input
+                            type="text"
+                            placeholder="Enter Your Details"
+                            class="textInput"
+                          />
+                        </div>
+                      </div>
+                      <button type="submit" class="btn submitBtn">
+                        Submit
+                      </button>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <!-- ***** -->
+    <!-- END OF HEADER -->
+    <!-- ***** -->
+
+    <!-- ***** -->
+    <!-- START OF FOOD LIST -->
+    <!-- ***** -->
+    <section class="foodSection">
+      <div class="container">
+        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-4">
+          <!-- start of first singleFood -->
+          <div class="col singleFood">
+            <div class="imgContainer">
+              <img src="./images/foodImg1.png" alt="food" />
+              <div class="offer">
+                <h2>15</h2>
+                <span
+                  ><span class="percentage"> % </span><br />
+                  off</span
+                >
+              </div>
+            </div>
+
+            <h5>Greys Vage</h5>
+            <button class="btn highLightBtn">6 Days Remaining</button>
+          </div>
+          <!-- end of first singleFood -->
+
+          <!-- start of second singleFood -->
+          <div class="col singleFood">
+            <div class="imgContainer">
+              <img src="./images/foodImg2.png" alt="food" />
+              <div class="offer">
+                <h2>10</h2>
+                <span
+                  ><span class="percentage"> % </span><br />
+                  off</span
+                >
+              </div>
+            </div>
+
+            <h5>Greys Vage</h5>
+            <button class="btn highLightBtn">6 Days Remaining</button>
+          </div>
+          <!-- end of second singleFood -->
+
+          <!-- start of third singleFood -->
+          <div class="col singleFood">
+            <div class="imgContainer">
+              <img src="./images/foodImg3.png" alt="food" />
+              <div class="offer">
+                <h2>25</h2>
+                <span
+                  ><span class="percentage"> % </span><br />
+                  off</span
+                >
+              </div>
+            </div>
+
+            <h5>Greys Vage</h5>
+            <button class="btn highLightBtn">6 Days Remaining</button>
+          </div>
+          <!-- end of third singleFood -->
+
+          <!-- start of fourth singleFood -->
+          <div class="col singleFood">
+            <div class="imgContainer">
+              <img src="./images/foodImg4.png" alt="food" />
+              <div class="offer">
+                <h2>20</h2>
+                <span
+                  ><span class="percentage"> % </span><br />
+                  off</span
+                >
+              </div>
+            </div>
+
+            <h5>Greys Vage</h5>
+            <button class="btn highLightBtn">6 Days Remaining</button>
+          </div>
+          <!-- end of fourth singleFood -->
+        </div>
+      </div>
+    </section>
+    <!-- ***** -->
+    <!-- END OF FOOD LIST -->
+    <!-- ***** -->
+
+    <!-- ***** -->
+    <!-- START OF FOOD SEARCH -->
+    <!-- ***** -->
+    <section class="foodSearch">
+      <div class="container foodSearchContainer">
+        <div class="foodSearchHeader">
+          <h2>Search By Food</h2>
+
+          <button class="d-none d-lg-flex">
+            <span> View All </span>
+            <div class="iconImgContainer">
+              <img src="./icons/rightArrowSm.svg" alt="rightArrowSm" />
+            </div>
+          </button>
+        </div>
+
+        <div class="slider">
+          <!-- start  single food search card -->
+          <div class="singleFoodSearch">
+            <div class="imgContainer">
+              <img src="./images/searchFood1.png" alt="beautician" />
+            </div>
+            <h5>Pizza</h5>
+          </div>
+          <!-- end single food search card -->
+
+          <!-- start  second food search card -->
+          <div class="singleFoodSearch">
+            <div class="imgContainer">
+              <img src="./images/searchFood2.png" alt="beautician" />
+            </div>
+            <h5>Burger</h5>
+          </div>
+          <!-- end second food search card -->
+
+          <!-- start  third food search card -->
+          <div class="singleFoodSearch">
+            <div class="imgContainer">
+              <img src="./images/searchFood3.png" alt="beautician" />
+            </div>
+            <h5>Noodles</h5>
+          </div>
+          <!-- end third food search card -->
+
+          <!-- start  fourth food search card -->
+          <div class="singleFoodSearch">
+            <div class="imgContainer">
+              <img src="./images/searchFood4.png" alt="beautician" />
+            </div>
+            <h5>Sub-sandiwch</h5>
+          </div>
+          <!-- end fourth food search card -->
+
+          <!-- start  fifth food search card -->
+          <div class="singleFoodSearch">
+            <div class="imgContainer">
+              <img src="./images/searchFood5.png" alt="beautician" />
+            </div>
+            <h5>Chowmein</h5>
+          </div>
+          <!-- end fifth food search card -->
+
+          <!-- start sixth food search card -->
+          <div class="singleFoodSearch">
+            <div class="imgContainer">
+              <img src="./images/searchFood6.png" alt="beautician" />
+            </div>
+            <h5>Steak</h5>
+          </div>
+          <!-- end sixth food search card -->
+        </div>
+      </div>
+    </section>
+    <!-- ***** -->
+    <!-- END OF FOOD SEARCH -->
+    <!-- ***** -->
+
+    <!-- ***** -->
+    <!-- START OF APP INSTALL -->
+    <!-- ***** -->
+    <section class="appInstallSection">
+      <div class="container position-relative">
+        <div class="appInstallHeader">
+          <div class="singleHeader">
+            <div class="imgContainer">
+              <img src="./images/discount.png" alt="discount" />
+            </div>
+            <h5>Daily Discounts</h5>
+          </div>
+
+          <div class="singleHeader">
+            <div class="imgContainer">
+              <img src="./images/liveTracing.png" alt="discount" />
+            </div>
+            <h5>Live Tracing</h5>
+          </div>
+
+          <div class="singleHeader">
+            <div class="imgContainer">
+              <img src="./images/time.png" alt="discount" />
+            </div>
+            <h5>Quick Delivery</h5>
+          </div>
+        </div>
+
+        <div class="downLoadContainer pb-5 pb-md-0">
+          <div class="phoneContainer">
+            <div class="halfPhoneContainer">
+              <img src="./images/halfPhone.png" alt="half phone" />
+            </div>
+            <div class="fullPhoneContainer">
+              <img src="./images/fullPhone.png" alt="full phone" />
+            </div>
+          </div>
+
+          <div class="mt-5 mt-md-0 text-center text-md-start appInstallContent">
+            <h2>Install the App</h2>
+            <p>
+              It's never been easier to order food. Look for the finest
+              discounts and you'll be lost in a world of delectable food.
+            </p>
+
+            <div class="installBtnContainer">
+              <button class="btn">
+                <div class="iconImgContainer">
+                  <img src="./icons/playStore.svg" alt="playStore" />
+                </div>
+                <div class="text">
+                  <span>Get It On</span>
+                  <h6>Play Store</h6>
+                </div>
+              </button>
+
+              <button class="btn">
+                <div class="iconImgContainer">
+                  <img src="./icons/appleStore.svg" alt="appleStore" />
+                </div>
+                <div class="text">
+                  <span>Download On</span>
+                  <h6>Apple Store</h6>
+                </div>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ***** -->
+    <!-- END OF APP INSTALL -->
+    <!-- ***** -->
+
+    <!-- ***** -->
+    <!-- START OF ORDER -->
+    <!-- ***** -->
+    <section class="orderSection">
+      <div class="container">
+        <div class="orderContainer">
+          <!-- start of first order -->
+          <article class="singleOrder">
+            <div class="posterContainer">
+              <img src="./images/orderImg1.png" alt="order img 1" />
+            </div>
+
+            <div class="content">
+              <h3>Best deals <span> Crispy Sandwiches </span></h3>
+
+              <p>
+                Enjoy the large size of sandwiches. Complete perfect slice of
+                sandwiches.
+              </p>
+
+              <button class="btn">
+                Proceed to Order
+                <div class="iconImgContainer">
+                  <img src="./icons/rightArrowSmWhite.svg" alt="right arrow" />
+                </div>
+              </button>
+            </div>
+          </article>
+          <!-- end of first order -->
+
+          <!-- start of second order -->
+          <article class="singleOrder">
+            <div class="posterContainer">
+              <img src="./images/orderImg2.png" alt="order img 2" />
+            </div>
+
+            <div class="content">
+              <h3>Celebrate parties with <span> Fried Chicken </span></h3>
+
+              <p>
+                Get the best fried chicken smeared with a lip smacking lemon
+                chili flavor. Check out best deals for fried chicken.
+              </p>
+
+              <button class="btn">
+                Proceed to Order
+                <div class="iconImgContainer">
+                  <img src="./icons/rightArrowSmWhite.svg" alt="right arrow" />
+                </div>
+              </button>
+            </div>
+          </article>
+          <!-- end of second order -->
+
+          <!-- start of third order -->
+          <article class="singleOrder">
+            <div class="posterContainer">
+              <img src="./images/orderImg3.png" alt="order img 2" />
+            </div>
+
+            <div class="content">
+              <h3>Wanna eat hot & spicy <span>Pizza?</span></h3>
+
+              <p>
+                Pair up with a friend and enjoy the hot and crispy pizza pops.
+                Try it with the best deals.
+              </p>
+
+              <button class="btn">
+                Proceed to Order
+                <div class="iconImgContainer">
+                  <img src="./icons/rightArrowSmWhite.svg" alt="right arrow" />
+                </div>
+              </button>
+            </div>
+          </article>
+          <!-- end of third order -->
+        </div>
+      </div>
+    </section>
+    <!-- ***** -->
+    <!-- END OF ORDER -->
+    <!-- ***** -->
+
+    <!-- ***** -->
+    <!-- START OF FOOTER IMG -->
+    <!-- ***** -->
+    <section class="footerImg">
+      <div class="container">
+        <h2>
+          Are you ready to order with <br />
+          the best deals?
+        </h2>
+        <button class="btn">
+          Proceed to order
+          <div class="iconImgContainer">
+            <img src="./icons/rightArrowSmWhite.svg" alt="arrow right" />
+          </div>
+        </button>
+      </div>
+    </section>
+
+    <!-- ***** -->
+    <!-- END OF FOOTER IMG -->
+    <!-- ***** -->
+
+    <!-- ***** -->
+    <!-- START OF FOOTER  -->
+    <!-- ***** -->
+    <footer class="footer">
+      <div class="container">
+        <div class="content">
+          <div class="footerLinks">
+            <div class="footerLinksContainer">
+              <h3>Company</h3>
+
+              <ul>
+                <li>
+                  <a href="#">About us</a>
+                </li>
+                <li>
+                  <a href="#">Teams</a>
+                </li>
+                <li>
+                  <a href="#">Career</a>
+                </li>
+                <li>
+                  <a href="#">Blog</a>
+                </li>
+              </ul>
+            </div>
+
+            <div class="footerLinksContainer">
+              <h3>Contact</h3>
+
+              <ul>
+                <li>
+                  <a href="#">Help and Support</a>
+                </li>
+                <li>
+                  <a href="#">Partner with Us</a>
+                </li>
+                <li>
+                  <a href="#">Ride with Us</a>
+                </li>
+              </ul>
+            </div>
+
+            <div class="footerLinksContainer">
+              <h3>Legal</h3>
+
+              <ul>
+                <li>
+                  <a href="#">Terms & Conditions</a>
+                </li>
+                <li>
+                  <a href="#">Refund & Cancellation</a>
+                </li>
+                <li>
+                  <a href="#">Privacy Policy</a>
+                </li>
+                <li>
+                  <a href="#">Cookie Policy</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="contact">
+            <h5>Follow us</h5>
+
+            <ul class="socialLinks">
+              <li>
+                <a href="https://www.facebook.com/" target="_blank">
+                  <div class="iconImgContainer">
+                    <img src="./icons/facebook.svg" alt="facebook" />
+                  </div>
+                </a>
+              </li>
+
+              <li>
+                <a href="https://www.instagram.com/" target="_blank">
+                  <div class="iconImgContainer">
+                    <img src="./icons/instagram.svg" alt="instagram" />
+                  </div>
+                </a>
+              </li>
+
+              <li>
+                <a href="https://www.twitter.com/" target="_blank">
+                  <div class="iconImgContainer">
+                    <img src="./icons/twitter.svg" alt="twitter" />
+                  </div>
+                </a>
+              </li>
+            </ul>
+
+            <h6>Receive exclusive offers in your mailbox</h6>
+
+            <form class="heroForm">
+              <div class="formContent">
+                <div class="formInput">
+                  <div class="iconImgContainer">
+                    <img src="./icons/envelope.svg" alt="location" />
+                  </div>
+                  <div class="inputForm">
+                    <input
+                      type="text"
+                      placeholder="Enter Your Address"
+                      class="textInput"
+                    />
+                  </div>
+                </div>
+                <button type="submit" class="btn submitBtn">Subscribe</button>
+              </div>
+            </form>
+          </div>
+        </div>
+
+        <div class="horizontalLine"></div>
+
+        <div class="d-flex justify-content-between align-items-center">
+          <p class="footerText">
+            All rights Reserved © <span>Your Company, 2024</span>
+          </p>
+
+          <p class="footerText">made with 💛 by <span>Themewagon</span></p>
+        </div>
+      </div>
+    </footer>
+    <!-- ***** -->
+    <!-- END OF FOOTER  -->
+    <!-- ***** -->
+
+    <!-- ****** -->
+    <!-- SCRIPT -->
+    <!-- ****** -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+      integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery-migrate/3.5.2/jquery-migrate.min.js"
+      integrity="sha512-BzvgYEoHXuphX+g7B/laemJGYFdrq4fTKEo+B3PurSxstMZtwu28FHkPKXu6dSBCzbUWqz/rMv755nUwhjQypw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"
+      integrity="sha512-HGOnQO9+SP1V92SrtZfjqxxtLmVzqZpjFFekvzZVWoiASSQgSr4cw9Kqd2+l8Llp4Gm0G8GIFJ4ddwZilcdb8A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script type="text/javascript">
+      $('.slider').slick({
+        infinite: true,
+        speed: 300,
+        slidesToShow: 5,
+        slidesToScroll: 1,
+        prevArrow: `<button class="slickLeftArrowContainer"><img src="./icons/leftArrow.svg" alt="Prev"></button>`,
+        nextArrow: `<button class="slickRightArrowContainer">
+          <img src="./icons/rightArrow.svg" alt="Next">
+            </button>`,
+        responsive: [
+          {
+            breakpoint: 1170, // Less than 990px
+            settings: {
+              slidesToShow: 4, // Show 5 slides
+              slidesToScroll: 1,
+            },
+          },
+          {
+            breakpoint: 990, // Less than 990px
+            settings: {
+              slidesToShow: 3, // Show 5 slides
+              slidesToScroll: 1,
+            },
+          },
+          {
+            breakpoint: 768, // Less than 768px
+            settings: {
+              slidesToShow: 2, // Show 3 slides
+              slidesToScroll: 1,
+            },
+          },
+        ],
+      });
+    </script>
+  </body>
+</html>
