@@ -561,7 +561,7 @@ a {
 
 .orderContainer {
   display: grid;
-  gap: 2rem;
+  gap: 4rem;
 }
 .singleOrder {
   display: grid;
